@@ -165,7 +165,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 0px 200px 0px;
 }
 
 .main-descr {
@@ -180,22 +179,21 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: relative;
-  width: 35%;
   padding-top: 105px;
 }
 .main-descr__bg-circle {
   position: absolute;
   background: #FFE3D7;
-  width: 622px;
-  height: 622px;
+  width: 822px;
+  height: 822px;
   -webkit-clip-path: circle(50%);
           clip-path: circle(50%);
   opacity: 0.5;
   -webkit-filter: blur(100px);
           filter: blur(100px);
   z-index: -1;
-  bottom: 35%;
-  right: 20%;
+  bottom: 300px;
+  right: -40px;
 }
 .main-descr__sup-title {
   color: #4D4D4D;
@@ -238,20 +236,26 @@ body {
 }
 
 .main-item {
-  width: 65%;
-  padding: 140px 80px 0px 40px;
+  padding: 140px 40px 100px 100px;
 }
-.main-item__bg {
+.main-item .main-image__bg {
   position: relative;
-  background-position: center;
   max-width: 755px;
   max-height: 573px;
   border-radius: 0px 0px 60px 60px;
+  z-index: -1;
 }
-.main-item__bg-border {
+.main-item .main-image::before {
+  content: "";
   position: absolute;
-  right: 180px;
-  top: 165px;
+  border: 5px solid #FF7539;
+  border-radius: 20px;
+  width: 755px;
+  height: 573px;
+  border-radius: 20px;
+  z-index: 0;
+  margin-left: 49px;
+  margin-top: -20px;
 }
 
 .comments {
@@ -269,4 +273,12 @@ body {
   font-weight: 700;
   color: #1A1A1A;
   margin-top: 32px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.swiper .swiper-slide {
+  background-color: fuchsia;
 }
