@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/swiper.css">
   <title>Furr - когтеточки из гофрокартона</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="circle"></div>
     <div class="container">
       <div class="header__block">
         <div class="header__img">
@@ -52,8 +53,9 @@
         </div>
 
         <div class="main-item">
-          <img class="main-item__bg" src="./img/main-bg.JPG">
-          <img class="main-item__bg-border" src="./img/main-item__bg-border.svg">
+          <div class="main-image">
+            <img class="main-image__bg" src="./img/main-bg.JPG">
+          </div>
         </div>
       </div>
     </div>
@@ -64,12 +66,24 @@
 
     <section class="comments">
       <div class="container">
-      <span class="comments__sup-title">Более 1000 клиентов уже испробовали наши когтеточки</span>
-      <h2 class="comments__title">Комментарии довольных котиков.</h2>
-      
+        <span class="comments__sup-title">Более 1000 клиентов уже испробовали наши когтеточки</span>
+        <h2 class="comments__title">Комментарии довольных котиков.</h2>
+
+        <!-- Общий контейнер -->
+        <div class="swiper swiper-container">
+          <!-- Оболочка для слайдера -->
+          <div class="swiper-wrapper">
+            <!-- Оболочка для отдельного слайда -->
+            <div class="swiper-slide">Slide 0</div>
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+          </div>
         </div>
+      </div>
     </section>
   </main>
+  <script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="./js/swiper.js"></script>
 </body>
 
 </html>

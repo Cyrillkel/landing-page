@@ -1,6 +1,6 @@
 @import "reset.scss";
 
-@mixin button {
+@mixin button() {
   background-color: #FF7539;
   border-radius: 10px;
 }
@@ -21,6 +21,11 @@
   color: #1A1A1A;
 }
 
+// $fz:80px; vareable
+// %example{
+// border: 5px dashed red;  template syntax
+// }
+// @extend %tplborder
 body {
   background-color: #ffffff;
 }
@@ -89,7 +94,7 @@ body {
 
 .main-block {
   display: flex;
-  padding: 50px 0px 200px 0px;
+  // padding: 50px 10px 200px 10px;
 }
 
 .main-descr {
@@ -97,21 +102,20 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  width: 35%;
   padding-top: 105px;
 
 
   &__bg-circle {
     position: absolute;
     background: #FFE3D7;
-    width: 622px;
-    height: 622px;
+    width: 822px;
+    height: 822px;
     clip-path: circle(50%);
     opacity: 0.5;
     filter: blur(100px);
     z-index: -1;
-    bottom: 35%;
-    right: 20%;
+    bottom: 300px;
+    right: -40px;
   }
 
   &__sup-title {
@@ -160,25 +164,35 @@ body {
 }
 
 .main-item {
-  width: 65%;
-  padding: 140px 80px 0px 40px;
+  padding: 140px 40px 100px 100px;
 
-  &__bg {
+  .main-image__bg {
     position: relative;
-    background-position: center;
     max-width: 755px;
     max-height: 573px;
     border-radius: 0px 0px 60px 60px;
+    z-index: -1;
+    // margin-top: 18px;
   }
 
-  &__bg-border {
-    position: absolute;
-    right: 180px;
-    top: 165px;
+  .main-image {
+    
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: 5px solid #FF7539;
+      border-radius: 20px;
+      width: 755px;
+      height: 573px;
+      border-radius: 20px;
+      z-index: 0;
+      margin-left: 49px;
+      margin-top: -20px;
+    }
   }
+
 }
-
-// section comments
 
 .comments {
   text-align: center;
@@ -192,5 +206,14 @@ body {
   &__title {
     @include title;
     margin-top: 32px;
+  }
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+
+  .swiper-slide {
+    background-color: fuchsia;
   }
 }
