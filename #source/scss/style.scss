@@ -21,6 +21,10 @@
   color: #1A1A1A;
 }
 
+$fzl:24px;
+$fzm:20px;
+$fzs:16px;
+
 // $fz:80px; vareable
 // %example{
 // border: 5px dashed red;  template syntax
@@ -191,10 +195,12 @@ body {
       margin-top: -20px;
     }
   }
-
 }
 
+// comments
+
 .comments {
+  width: 100%;
   text-align: center;
   background-color: #FFE3D7;
   padding: 88px 0px 183px 0px;
@@ -205,15 +211,59 @@ body {
 
   &__title {
     @include title;
-    margin-top: 32px;
+    margin: 32px 0px;
   }
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
-
   .swiper-slide {
-    background-color: fuchsia;
+    position: relative;
+    background-color: #FFFFFF;
+    width: 537px;
+    height: 423px;
+    padding: 50px;
+    &__image {
+      position: absolute;
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      left: 50px;
+      top: 30px;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px 0px 0px 150px;
+    }
+    &__title {
+      font-size: $fzl;
+      display: inline;
+      margin-bottom: 10px;
+    }
+    &__sup__title {
+      font-size: $fzs;
+      display: inline;
+      color: #4D4D4D;
+    }
+    &__description {
+      text-align: left;
+      padding: 20px;
+      margin-top: 50px;
+      width: 435px;
+      height: 164px;
+      font-size: $fzl;
+      color: #1A1A1A;
+    }
+    .swiper-slide__rating {
+      position: relative;
+      font-size: 40px;
+      display: inline-block;
+      &::before {
+        content: "★★★★★";
+        display: block;
+        color: #FF9465;
+      }
+    }
   }
 }
