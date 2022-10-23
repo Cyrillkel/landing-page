@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 *,
@@ -102,7 +103,7 @@ body {
   position: fixed;
   -webkit-filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.25));
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__block {
@@ -274,7 +275,8 @@ body {
   font-size: 48px;
   font-weight: 700;
   color: #1A1A1A;
-  margin: 32px 0px;
+  text-align: center;
+  margin: 52px 0px;
 }
 
 .swiper .swiper-slide {
@@ -333,4 +335,83 @@ body {
   content: "★★★★★";
   display: block;
   color: #FF9465;
+}
+
+.production {
+  width: 100%;
+  text-align: center;
+  padding: 88px 0px;
+}
+.production__sup-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FF7539;
+}
+.production__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1A1A1A;
+  text-align: center;
+  padding: 20px 0;
+}
+.production__sub-title {
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 1130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  font-size: 20px;
+  border: 3px solid #FF9465;
+  border-radius: 20px;
+  margin: 50px 10px 10px 10px;
+  padding: 40px 20px 40px 20px;
+}
+.card__image {
+  width: 150px;
+  height: 150px;
+}
+
+.content {
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0px;
+  padding: 3px;
+}
+
+.buttons__click {
+  background-color: #FF9465;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.buttons__basket {
+  background-color: #FF7539;
+  border-radius: 10px;
+  padding: 3px;
 }
