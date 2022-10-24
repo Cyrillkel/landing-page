@@ -298,10 +298,9 @@ body {
 }
 
 .wrapper {
-  max-width: 1130px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   justify-content: space-around;
 }
 
@@ -337,29 +336,66 @@ body {
 }
 
 .buttons__click {
-  background-color:#FF9465;
+  background-color: #FF9465;
   border-radius: 10px;
   padding: 3px;
 }
 
 .buttons__basket {
-  background-color:#FF7539;
+  background-color: #FF7539;
   border-radius: 10px;
   padding: 3px;
 }
 
 
 
-
-
-
-
-
 // section about
 
-// .about {
-//   &__title {
-//     @include title;
+.about {
+  text-align: center;
 
-//   }
-// }
+  &__sup-title {
+    @include sup-title;
+  }
+
+  &__title {
+    margin: 20px 0px;
+    @include title;
+  }
+
+  &__sub-title {
+    font-size: $fzs;
+  }
+
+  &__furr {
+    color: #000000;
+    font-weight: 900;
+    font-size: $fzm;
+  }
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 40px 0px;
+
+  &__content {
+    padding: 10px;
+  }
+
+  &__title {
+    font-size: $fzm;
+    padding: 20px 0px;
+    text-align: start;
+    color: #3F3F3F;
+  }
+
+  &__text {
+    width: 250px;
+    height: 250px;
+    text-align: start;
+    line-height: 22px;
+  }
+}
