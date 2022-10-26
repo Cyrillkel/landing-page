@@ -204,7 +204,7 @@ body {
   width: 100%;
   text-align: center;
   background-color: #FFE3D7;
-  padding: 88px 0px 183px 0px;
+  padding: 100px 0px 200px 0px;
 
   &__sup-title {
     @include sup-title;
@@ -352,6 +352,7 @@ body {
 // section about
 
 .about {
+  padding: 50px 0;
   text-align: center;
 
   &__sup-title {
@@ -384,6 +385,10 @@ body {
   &__content {
     padding: 10px;
   }
+  &__image {
+    width: 250px;
+    border-radius: 7px;
+  }
 
   &__title {
     font-size: $fzm;
@@ -399,3 +404,47 @@ body {
     line-height: 22px;
   }
 }
+
+//gallery 
+
+.gallery {
+  padding: 50px 0;
+  &__title {
+    @include title;
+  }
+}
+
+.swiper-gallery {
+  margin: 50px 0;
+  .item-gallery {
+    margin-bottom: 50px;
+    background-color: #FFE3D7;
+    &__slider {
+      padding: 10px;
+      height: 500px;
+    }
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .swiper-button-prev::after, 
+  .swiper-button-next::after
+  {
+    color: #FF7539;
+  }
+  .swiper-pagination {
+    bottom: 0;
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #FF9465;
+  }
+}
+
+

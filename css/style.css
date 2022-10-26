@@ -264,7 +264,7 @@ body {
   width: 100%;
   text-align: center;
   background-color: #FFE3D7;
-  padding: 88px 0px 183px 0px;
+  padding: 100px 0px 200px 0px;
 }
 .comments__sup-title {
   font-size: 24px;
@@ -416,6 +416,7 @@ body {
 }
 
 .about {
+  padding: 50px 0;
   text-align: center;
 }
 .about__sup-title {
@@ -455,6 +456,10 @@ body {
 .item__content {
   padding: 10px;
 }
+.item__image {
+  width: 250px;
+  border-radius: 7px;
+}
 .item__title {
   font-size: 20px;
   padding: 20px 0px;
@@ -466,4 +471,48 @@ body {
   height: 250px;
   text-align: start;
   line-height: 22px;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+.gallery__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1A1A1A;
+  text-align: center;
+}
+
+.swiper-gallery {
+  margin: 50px 0;
+}
+.swiper-gallery .item-gallery {
+  margin-bottom: 50px;
+  background-color: #FFE3D7;
+}
+.swiper-gallery .item-gallery__slider {
+  padding: 10px;
+  height: 500px;
+}
+.swiper-gallery .item-gallery__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.swiper-gallery .swiper-button-prev::after,
+.swiper-gallery .swiper-button-next::after {
+  color: #FF7539;
+}
+.swiper-gallery .swiper-pagination {
+  bottom: 0;
+}
+.swiper-gallery .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #FF9465;
 }
