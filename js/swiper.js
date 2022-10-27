@@ -10,6 +10,31 @@ let swiperComments = new Swiper('.swiper-comments', {
     disableOnInteraction: false, 
     speed: 800
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    480: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        slideToClickedSlide: true,
+    },
+    // when window width is >= 640px
+    640: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        slideToClickedSlide: true,
+    },
+    960: {
+      slidesPerView: 3,
+        spaceBetween: 0,
+        slideToClickedSlide: true,
+    }
+}
 });
 
 let swiperGallery = new Swiper('.swiper-gallery', {
@@ -34,8 +59,33 @@ let swiperGallery = new Swiper('.swiper-gallery', {
     delay: 5000, 
     stopOnLastSlide: true,
     disableOnInteraction: false, 
-    speed: 800
+    speed: 400
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    480: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        slideToClickedSlide: true,
+    },
+    // when window width is >= 640px
+    640: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        slideToClickedSlide: true,
+    },
+    960: {
+      slidesPerView: 3,
+        spaceBetween: 5,
+        slideToClickedSlide: true,
+    }
+}
 });
 
 

@@ -26,6 +26,8 @@ $fzl: 24px;
 $fzm: 20px;
 $fzs: 16px;
 
+
+
 // $fz:80px; vareable
 // %example{
 // border: 5px dashed red;  template syntax
@@ -99,7 +101,7 @@ body {
 
 .main-block {
   display: flex;
-  // padding: 50px 10px 200px 10px;
+  padding: 100px 10px 0px 10px;
 }
 
 .main-descr {
@@ -444,6 +446,75 @@ body {
     line-height: 20px;
     font-size: 14px;
     background-color: #FF9465;
+  }
+}
+
+//contacts
+
+.footer {
+  background-color: #FF9465;
+  padding: 50px 0;
+  &__title {
+    @include title;
+  }
+  .footer-map {
+    text-align: center;
+    padding: 50px;
+  }
+  .footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__logo {
+      width: 100px;
+      height: 45px;
+      object-fit: cover;
+      object-position: center;
+    }
+    &__text {
+      margin-bottom: 5px;
+    }
+    .footer-icon {
+      display: flex;
+      flex-direction: column;
+      &__content {
+        display: flex;
+        justify-content: space-around;
+      }
+      &__phone, a {
+        color: #1A1A1A;
+        font-weight: 900;
+        font-size: $fzm;
+        margin-top: 20px;
+      }
+    }
+  }
+  .feedback {
+    &__form, form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      font-size: $fzm;
+    }
+    &__input, input {
+      color: #1A1A1A;
+      font-size: $fzm;
+      margin: 35px 20px;
+      padding: 10px 5px;
+      background-color: #FF7539;
+      border-radius: 5px;
+      &::placeholder {
+        color: #1A1A1A;
+      }
+    }
   }
 }
 
