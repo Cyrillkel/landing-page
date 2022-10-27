@@ -11,7 +11,9 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/swiper.css">
-  <title>Furr - когтеточки из гофрокартона</title>
+  <title>
+    Furr - когтеточки из гофрокартона
+  </title>
 </head>
 
 <body>
@@ -23,15 +25,44 @@
         </div>
         <div class="header-navigation">
           <ul class="navigation-list">
-            <li class="navigation-list__item"><a class="link" href="#">Главная</a></li>
-            <li class="navigation-list__item"><a class="link" href="#">Отзывы</a></li>
-            <li class="navigation-list__item"><a class="link" href="#">Продукция</a></li>
-            <li class="navigation-list__item"><a class="link" href="#">О нас</a></li>
-            <li class="navigation-list__item"><a class="link" href="#">Галерея</a></li>
-            <li class="navigation-list__item"><a class="link" href="#">Контакты</a></li>
+            <li class="navigation-list__item">
+              <a class="link" href="#home">
+                Главная
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="link" href="#reviews">
+                Отзывы
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="link" href="#production">
+                Продукция
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="link" href="#about">
+                О нас
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="link" href="#gallery">
+                Галерея
+              </a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="link" href="#contacts">
+                Контакты
+              </a>
+            </li>
           </ul>
         </div>
-        <button class="header__button button"><img class="button__icon" src="./img/header__icon.svg">Заказать</button>
+        <a class="link" href="#contacts">
+          <button class="header__button button">
+            <img class="button__icon" src="./img/header__icon.svg">
+            Заказать
+          </button>
+        </a>
       </div>
     </div>
   </header>
@@ -40,22 +71,29 @@
 
   <main class="main">
     <div class="container">
-      <div class="main-block">
+      <div class="main-block" id="home">
         <div class="main-descr">
           <div class="main-descr__bg-circle">
           </div>
           <span class="main-descr__sup-title">
+            <!-- <a name="home"> -->
             🐾Точи вместе с нами
+            <!-- </a> -->
           </span>
-          <h1 class="main-descr__title">Когтеточки из гофрокартона, средство для маникюра
+          <h1 class="main-descr__title">
+            Когтеточки из гофрокартона, средство для маникюра
           </h1>
-          <span class="main-descr__sub-title">Вибери подходящий принт
+          <span class="main-descr__sub-title">
+            Вибери подходящий принт
           </span>
-          <button class="main-descr__button button"><img class="main-descr__icon"
-              src="./img/header__icon.svg">Купить</button>
-          <span class="main-descr__btn-descr">Успей заказать, пока есть в наличии</span>
+          <button class="main-descr__button button">
+            <img class="main-descr__icon" src="./img/header__icon.svg">
+            Купить
+          </button>
+          <span class="main-descr__btn-descr">
+            Успей заказать, пока есть в наличии
+          </span>
         </div>
-
         <div class="main-item">
           <div class="main-image">
             <img class="main-image__bg" src="./img/main-bg.JPG">
@@ -69,8 +107,12 @@
     <!-- section comments -->
 
     <section class="comments">
-      <span class="comments__sup-title">Более 1000 клиентов уже испробовали наши когтеточки</span>
-      <h2 class="comments__title">Отзывы довольных котиков.</h2>
+      <span class="comments__sup-title">
+        Более 1000 клиентов уже испробовали наши когтеточки
+      </span>
+      <h2 class="comments__title" id="reviews">
+        Отзывы довольных котиков.
+      </h2>
 
       <!-- Общий контейнер -->
       <div class="swiper swiper-comments">
@@ -95,7 +137,8 @@
             <span class="swiper-slide__rating">
             </span>
           </div>
-          <div class="swiper-slide"> <img class="swiper-slide__image" src="./img/commenter 1.png">
+          <div class="swiper-slide">
+            <img class="swiper-slide__image" src="./img/commenter 1.png">
             <div class="swiper-slide__item">
               <span class="swiper-slide__title">
                 Катерина
@@ -181,7 +224,7 @@
 
     <!-- production -->
 
-    <section class="production">
+    <section class="production" id="production">
       <div class="container">
         <span class="production__sup-title">
           Поставь точку в поиске лучшей когтеточки 🐾
@@ -515,8 +558,10 @@
         <span class="about__sup-title">
           Когтеточки FURR. Дери без конца 🐈
         </span>
-        <h2 class="about__title">
-          О Компании
+        <h2 class="about__title" id="about">
+          <a name="about">
+            О Компании
+          </a>
         </h2>
         <span class="about__sub-title">
           До создания
@@ -559,7 +604,9 @@
           <div class="item__content">
             <img src="./img/cat_3.png" alt="Prints" class="item__image">
             <h3 class="item__title">
-              Продукция
+              <a name="gallery">
+                Продукция
+              </a>
             </h3>
             <p class="item__text">
               Продукцию FURR отличают уникальные дизайнерские принты
@@ -568,9 +615,12 @@
         </div>
       </div>
     </section>
+
+    <!-- gallery -->
+
     <section class="gallery">
       <div class="container">
-        <h2 class="gallery__title">
+        <h2 class="gallery__title" id="gallery">
           Галерея наших клиентов
         </h2>
       </div>
@@ -727,7 +777,77 @@
         </div>
     </section>
   </main>
-  <script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="./js/swiper.js"></script>
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <h2 class="footer__title">
+        Контакты
+      </h2>
+      <div class="footer-map">
+        <div style="position:relative;overflow:hidden;">
+          <a href="https://yandex.ru/maps/org/mera_kapital/32351678131/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">
+            Мера Капитал
+          </a>
+          <a href="https://yandex.ru/maps/2/saint-petersburg/category/financial_consulting/184105394/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">
+            Финансовый консалтинг в Санкт‑Петербурге
+          </a>
+          <a href="https://yandex.ru/maps/2/saint-petersburg/category/investment_company/184105570/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:28px;">
+            Инвестиционная компания в Санкт‑Петербурге
+          </a>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUZf4VZOC" width="1200" height="400" frameborder="1"
+            allowfullscreen="true" style="position:relative;">
+          </iframe>
+        </div>
+      </div>
+      <div class="feedback">
+        <form name="form" action="mail.php" method="post" id="form_message">
+          <h2 class="feedback__title">
+            Форма обратной связи
+          </h2>
+          <p>
+          <input class="input" name="name" type="text" placeholder="Ваше имя"/>
+          </p>
+          <p>
+          <input class="input" name="email" type="text" placeholder="Телефон"/>
+          </p>
+          <p>
+            <input id="submit" value="Отправить" type="submit" />
+          </p>
+        </form>
+      </div>
+      <div class="footer-block">
+        <div class="footer-block__item">
+          <img class="footer-block__logo" src="./img/furr.png" alt="FURR">
+          <span class="footer-block__text">
+            ©2022 - FURR
+          </span>
+          <span class="footer-block__sub-text">
+            All rights reserved
+          </span>
+        </div>
+        <div class="footer-icon">
+          <div class="footer-icon__content">
+            <img class="footer-icon__instagram" src="./img/./instagram.png">
+            <img class="footer-block__fb" src="./img/facebook.png">
+            <img class="footer-block__youtube" src="./img/youtube.png">
+          </div>
+          <div class="footer-icon__phone">
+            <a href="tel:+79999999999">
+              +7 (999) 999-99-99
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="./js/script.js">
+  </script>
+  <script type="text/javascript" src="./js/swiper-bundle.min.js">
+  </script>
+  <script type="text/javascript" src="./js/swiper.js">
+  </script>
 </body>
+
 </html>
