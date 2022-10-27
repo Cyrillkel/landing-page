@@ -31,7 +31,7 @@ let swiperComments = new Swiper('.swiper-comments', {
     },
     960: {
       slidesPerView: 3,
-        spaceBetween: 0,
+        spaceBetween: 16,
         slideToClickedSlide: true,
     }
 }
