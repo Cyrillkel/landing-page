@@ -171,6 +171,19 @@ body {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 992px) {
+  .header__block {
+    padding: 0px 40px;
+  }
+  .header__block .button {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .header__block .link {
+    font-size: 14px;
+  }
+}
 .main-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,6 +282,49 @@ body {
   margin-top: -20px;
 }
 
+@media screen and (max-width: 992px) {
+  .main-descr {
+    padding: 35px 35px 0px 35px;
+  }
+  .main-descr__sup-title {
+    font-size: 20px;
+  }
+  .main-descr__title {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .main-descr__bg-circle {
+    width: 273px;
+    height: 568px;
+    bottom: 185px;
+    right: 135px;
+  }
+  .main-descr__button {
+    font-size: 18px;
+    width: 135px;
+    height: 40px;
+  }
+  .main-descr__btn-descr {
+    margin-left: 21px;
+  }
+
+  .main-item {
+    padding: 110px 30px 86px 0px;
+  }
+  .main-item .main-image::before {
+    border: 3px solid #FF7539;
+    border-radius: 20px;
+    width: 337px;
+    height: 256px;
+    border-radius: 10px;
+    margin-left: 24px;
+    margin-top: 0px;
+  }
+  .main-item .main-image__bg {
+    max-width: 350px;
+    border-radius: 0px 0px 20px 20px;
+  }
+}
 .comments {
   width: 100%;
   text-align: center;
@@ -526,6 +582,11 @@ body {
   background-color: #FF9465;
 }
 
+@media screen and (max-width: 992px) {
+  .gallery {
+    margin-bottom: 190px;
+  }
+}
 .footer {
   background-color: #FF9465;
   padding: 50px 0;
@@ -591,13 +652,15 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.footer .footer-block .footer-icon__phone, .footer .footer-block .footer-icon a {
+.footer .footer-block .footer-icon__phone,
+.footer .footer-block .footer-icon a {
   color: #1A1A1A;
   font-weight: 900;
   font-size: 20px;
   margin-top: 20px;
 }
-.footer .feedback__form, .footer .feedback form {
+.footer .feedback__form,
+.footer .feedback form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,7 +674,8 @@ body {
 .footer .feedback__title {
   font-size: 20px;
 }
-.footer .feedback__input, .footer .feedback input {
+.footer .feedback__input,
+.footer .feedback input {
   color: #1A1A1A;
   font-size: 20px;
   margin: 35px 20px;
@@ -631,6 +695,14 @@ body {
 .footer .feedback__input::-ms-input-placeholder, .footer .feedback input::-ms-input-placeholder {
   color: #1A1A1A;
 }
-.footer .feedback__input::placeholder, .footer .feedback input::placeholder {
+.footer .feedback__input::placeholder,
+.footer .feedback input::placeholder {
   color: #1A1A1A;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 100px 20px 20px 20px;
+    margin-top: 0px;
+  }
 }
