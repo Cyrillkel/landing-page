@@ -1,0 +1,21 @@
+@mixin button() {
+  background-color: #FF7539;
+  border-radius: 10px;
+}
+
+@mixin color-text {
+  color: #4D4D4D;
+}
+
+@mixin sup-title {
+  font-size: $fzm;
+  font-weight: 700;
+  color: #FF7539;
+}
+
+@mixin title {
+  font-size: $fzl;
+  font-weight: 700;
+  color: #1A1A1A;
+  text-align: center;
+}
