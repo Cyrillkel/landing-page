@@ -193,7 +193,6 @@ body {
   .navigation-list {
     display: none;
   }
-
   .header__block {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -323,7 +322,6 @@ body {
   .main-descr__btn-descr {
     margin-left: 21px;
   }
-
   .main-item {
     padding: 110px 30px 86px 0px;
   }
@@ -363,7 +361,6 @@ body {
   .main-item {
     display: none;
   }
-
   .main-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,7 +370,6 @@ body {
             justify-content: center;
     text-align: center;
   }
-
   .main-descr__bg-circle {
     position: absolute;
     background: #FFE3D7;
@@ -543,35 +539,70 @@ body {
 .card__image {
   width: 150px;
   height: 150px;
+  margin-bottom: 30px;
 }
 
-.content {
+.card:hover {
+  border: 3px solid #FF9465;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+}
+.card .content {
   margin: 10px 0px;
   padding: 10px;
 }
-
-.price {
-  margin-top: 10px;
+.card .content .details {
+  width: 200px;
+  height: 100px;
 }
-
-.buttons {
+.card .content .details__title {
+  font-weight: 600;
+  font-size: 26px;
+}
+.card .content .details__sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+.card .price {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 900;
+  color: #f79f08;
+}
+.card .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 20px 0px;
-  padding: 3px;
+  padding: 5px;
 }
-
-.buttons__click {
+.card .buttons .button-click {
+  padding: 5px;
+  background-color: #FFFFFF;
+}
+.card .buttons .button-click:hover {
+  background-color: #FF9465;
+  border-radius: 5px;
+}
+.card .buttons .button-basket {
+  padding: 5px;
+  background-color: #FFFFFF;
+}
+.card .buttons .button-basket:hover {
+  background-color: #FF9465;
+  border-radius: 5px;
+}
+.card .buttons__click {
   background-color: #FF9465;
   border-radius: 10px;
   padding: 3px;
 }
-
-.buttons__basket {
+.card .buttons__basket {
   background-color: #FF7539;
   border-radius: 10px;
   padding: 3px;
@@ -655,15 +686,13 @@ body {
 .swiper-gallery .item-gallery__slider {
   padding: 10px;
   height: 500px;
+  overflow: hidden;
 }
 .swiper-gallery .item-gallery__image {
   width: 100%;
-  height: 100%;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .swiper-gallery .swiper-button-prev::after,
 .swiper-gallery .swiper-button-next::after {
