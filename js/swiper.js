@@ -87,7 +87,7 @@ let swiperGallery = new Swiper(".swiper-gallery", {
     },
     1250: {
       slidesPerView: 2,
-      spaceBetween: 5,
+      spaceBetween: 20,
       slideToClickedSlide: true,
     },
   },
