@@ -11,10 +11,17 @@ let swiperComments = new Swiper(".swiper-comments", {
     speed: 800,
   },
   breakpoints: {
-    375: {
+    280: {
       slidesPerView: 1,
       spaceBetween: 0,
       slideToClickedSlide: true,
+      
+    },
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      slideToClickedSlide: true,
+      
     },
 
     576: {
@@ -65,7 +72,7 @@ let swiperGallery = new Swiper(".swiper-gallery", {
     speed: 400,
   },
   breakpoints: {
-    375: {
+    360: {
       slidesPerView: 1,
       spaceBetween: 0,
       slideToClickedSlide: true,
