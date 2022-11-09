@@ -18,3 +18,8 @@
     @content;
   }
 }
+  @mixin mobile-s() {
+    @media (max-width: $breakpoint_s) {
+      @content;
+    }  
+  }
