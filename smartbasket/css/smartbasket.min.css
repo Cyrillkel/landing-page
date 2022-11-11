@@ -715,8 +715,8 @@
 
 .smart-basket__min-icon {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: #ffff;
 }
 
@@ -724,9 +724,14 @@
   position: absolute;
   display: inline;
   background-color: #ffff;
-  font-size: 25px;
+  font-size: 20px;
   color: #f79f08;
   font-weight: 900;
+  bottom: 40px;
+}
+
+.smart-basket__min-count:hover {
+  color: hsl(10, 94%, 50%);
 }
 
 @media (max-width: 1030px) {
