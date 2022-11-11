@@ -147,11 +147,6 @@ body {
   color: #3F3F3F;
   border-bottom: 2px solid #FF7539;
 }
-.header .basket__image {
-  width: 40px;
-  height: 40px;
-  fill: #5046e5;
-}
 
 @media (max-width: 1250px) {
   .header__block {
