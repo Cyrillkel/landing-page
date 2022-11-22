@@ -443,6 +443,16 @@ body {
   }
 }
 
+@include laptop {
+  .swiper {
+    .swiper-slide {
+      &__description {
+        max-width: fit-content;
+      }
+    }
+  }
+}
+
 @include mobile {
   .swiper {
     .swiper-slide {
@@ -462,33 +472,6 @@ body {
     }
   }
 }
-
-// @include mobiles {
-//   .swiper {
-//     .swiper-slide {
-//       &__description  {
-//         text-align: center;
-//         color: red;
-//         padding: 20px;
-//         margin-top: 50px;
-//         width: 326px;
-//         height: 182px;
-//       }
-//     }
-//   }
-// }
-
-
-//   &__description {
-//     width: 344px;
-//     height: 182px;
-//     background-color: #4D4D4D;
-//   }
-// }
-
-// @include tablet {
-
-// }
 
 // section production
 

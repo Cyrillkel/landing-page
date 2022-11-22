@@ -466,6 +466,13 @@ body {
   color: #FF9465;
 }
 
+@media (max-width: 1024px) {
+  .swiper .swiper-slide__description {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
 @media (max-width: 576px) {
   .swiper .swiper-slide__description {
     max-width: -webkit-fit-content;
