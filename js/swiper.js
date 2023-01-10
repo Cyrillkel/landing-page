@@ -49,8 +49,8 @@ let swiperComments = new Swiper(".swiper-comments", {
 
 let swiperGallery = new Swiper(".swiper-gallery", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEL: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
   },
   pagination: {
     el: ".swiper-pagination",
@@ -70,6 +70,12 @@ let swiperGallery = new Swiper(".swiper-gallery", {
     stopOnLastSlide: true,
     disableOnInteraction: false,
     speed: 400,
+  },
+  keyboard: {
+    enabled: true,
+  },
+  mousewheel: {
+    sensitivity: 1,
   },
   breakpoints: {
     360: {
@@ -99,3 +105,4 @@ let swiperGallery = new Swiper(".swiper-gallery", {
     },
   },
 });
+
