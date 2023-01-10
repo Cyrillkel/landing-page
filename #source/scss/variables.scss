@@ -8,3 +8,9 @@ $breakpoint_xl: 1024px;
 $breakpoint_md: 767px;
 $breakpoint_sm: 576px;
 $breakpoint_s: 360px;
+
+:root {
+  --content-width: 1200px;
+  --container-offset: 10px;
+  --container-width: calc(var(--content-width) + (var(--container-offset)*2));
+}
